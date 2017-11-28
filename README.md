@@ -3,15 +3,13 @@ Crack SHA256 in a distributed computing environment using a dictionary wordlist.
 This program works using Gearman for implementing the parallel framework. It needs a Gearman job server and Gearman Python API. 
 
 ## Client.py 
-client.py [-h] [-p PORT] [-b BATCHSIZE] wordlist hash server
-For example 
+client.py [-h] [-p PORT] [-b BATCHSIZE] wordlist hash server. For example 
 ```
 ./client.py -b 10 -p 8200 wordlist hash 192.168.122.2
 ```
 
 ## Worker.py
-worker.py [-h] [-p PORT] server
-For example
+worker.py [-h] [-p PORT] server. For example
 ```
 ./worker.py -p 8200 192.168.122.2
 ```
