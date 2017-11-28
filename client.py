@@ -26,10 +26,9 @@ def main():
 
 
     queue=list()
-    start=time.time()
     with open(args.hash,'r') as f:
         password=f.read()
-        password=password.lower()
+        password=password.rstrip().lower()
 
     with open(args.wordlist,'r') as f:
         words=f.readlines()
